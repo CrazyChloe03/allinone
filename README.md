@@ -11,7 +11,7 @@ calculator program for TI-84 Plus CE
 
 v1.0
 Added:
-quadratic equation\n
+quadratic equation/n
 free fall kit\n
 parabolic kit\n
 simplifying radical\n
