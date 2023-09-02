@@ -11,13 +11,13 @@ calculator program for TI-84 Plus CE
 
 v1.0
 Added:
-quadratic equation
-free fall kit
-parabolic kit
-simplifying radical
-factoring polynomial
-distance formula
-midpoint formula
+quadratic equation\n
+free fall kit\n
+parabolic kit\n
+simplifying radical\n
+factoring polynomial\n
+distance formula\n
+midpoint formula\n
 
 v1.1
 Added:
