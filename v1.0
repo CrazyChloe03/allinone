@@ -1,61 +1,27 @@
-"If u somehow see this message, pls dont change anything cz 
-"its really hard to fix when something goes wrong in this code
-
-
 ClrHome
 Disp "
 Disp "
-Disp "    All In One Program "
+Disp "    All In One Program"
 Disp "
-Disp "           v1.1
+Disp "           v1.0
 Disp "
 Disp "   Made by CrazyChloe03"
 
 Degree
 a+b
+Wait 0.5
 Pause 
 Disp "
 Disp "
 Disp "
 Disp "I highly recommend reading"
-Disp "   the info page first
+Disp "   the helps page first
 Disp "
+Wait 0.5
 Pause 
 
 Lbl M
-Menu("All In One Program","Info",H,"Physics",MM,"Maths",OO,"Versions",E,"Quit",Q)
-
-Lbl E
-Menu("Versions","V1.0",E0,"V1.1",E1,"Return",R0)
-
-Lbl E0
-ClrHome
-Disp "v1.0"
-Disp "Updated:
-Disp "Quadratic equation
-Disp "Free fall kit
-Disp "Parabolic kit
-Disp "Simplifying radical
-Disp "Factoring polynomial
-Disp "Distance formula
-Disp "Midpoint formula
-Pause 
-Goto E
-
-
-Lbl E1
-ClrHome
-Disp "v1.1"
-Disp "Updated:
-Disp "Table of content
-Disp "Info page
-Disp "Physics TOC
-Disp "Random equations
-Disp "Notes-Kinematics
-Disp "Versions page
-Disp "Fixed some minor issues
-Pause 
-Goto E
+Menu("All In One Program","Info",H,"Physics",1,"Maths",2,"Quit",Q)
 
 Lbl H
 ClrHome
@@ -68,10 +34,10 @@ Disp "I will optimize it later"
 Pause 
 ClrHome
 Lbl H1
-Menu("Info Center","Usage",U,"Tricks",UU,"Return",R0)
+Menu("Info Center","Usage",U,"Tricks",U1,"Return",R0)
 
 Lbl U
-Disp "Usage:                [1]"
+Disp "Usage: "
 Disp "So basically enter inputs"
 Disp "gravity can be +/- cz |x|"
 Disp "Remember to write the ans"
@@ -79,23 +45,12 @@ Disp "the calculator giv u on
 Disp "paper. Quad equation ABC
 Disp "is Ax²+Bx+C, Y0 is initial
 Disp "height.
-Disp "                next page
-Pause 
-ClrHome
-Disp "Usage:                [2]
-Disp "There are also equations
-Disp "under 'Random Equation'
-Disp "section. Notes are under
-Disp "the 'Notes' section along
-Disp "with some important things
-Disp "to know, lots of units
-Disp "are still work in progress
-Disp "cz i didnt learn them yet
+Disp "yeh and thats it
 Pause 
 ClrHome
 Goto H1
 
-Lbl UU
+Lbl U1
 Disp "When teacher comes and u"
 Disp "panic, press ON button
 Disp "at the bottom left corner
@@ -113,15 +68,11 @@ Lbl Q
 ClrHome
 Stop
 
-Lbl MM
-Menu("Physics","Kinematics",1,"Dynamics",2,"Circular Motion",3,"Energy",4,"Momentum",5,"Harmonic Motion",6,"Torque&Rotational Motion",7,"Return",R0)
-
-
 Lbl 1
-Menu("U1","Quadratic Equation",P1,"Free Fall",P2,"Parabolic",P3,"Random Equations",P5,"Notes",P4,"Return",R1)
+Menu("Physics","Quadratic Equation",P1,"Free Fall",P2,"Parabolic",P3,"Return",R1)
 
 Lbl R1
-Goto MM
+Goto M
 
 Lbl P1
 ClrHome
@@ -130,7 +81,6 @@ Input "A: ",A
 Input "B: ",B
 Input "C: ",C
 Disp (­B+√(BB-4AC))/(2A)
-Disp (­B-√(BB-4AC))/(2A)
 Pause 
 Goto 1
 
@@ -193,7 +143,10 @@ Goto P2
 
 Lbl P3
 ClrHome
-Menu("Parabolic","Final Velocity",V1,"Max Range",V2,"Max Height",V3,"Max Time",V4,"Max Height with Initial",V5,"Resulant Calculator",F6,"Return",R2
+Menu("Parabolic","Final Velocity",V1,"Max Range",V2,"Max Height",V3,"Max Time",V4,"Max Height with Initial",V5,"Resulant Calculator",F6,"Return",R3
+
+Lbl R3
+Goto 1
 
 Lbl V1
 ClrHome
@@ -230,7 +183,7 @@ ClrHome
 Disp "Max Time Calculator"
 Input "Voy: ",Y
 Input "Gravity: ",G
-Disp (2Y/abs(G))
+Disp (Y/abs(G))
 Pause 
 Goto P3
 
@@ -257,118 +210,11 @@ Disp (tan(Y/X))
 Pause 
 Goto P3
 
-Lbl P4
-Menu("Notes Page","Kinematics",U1,"Dynamics",U2,"Circular Motion",U3,"Energy",U4,"Momentum",U5,"Harmonic Motion",U6,"Torque&Rotational Motion",U7,"Return",R2)
+Lbl 2
+Menu("Maths","Simplify Radical",S1,"Factoring Polynomial",S2,"Distance Formula",S3,"Midpoint Formula",S4,"Return",R4)
 
-Lbl U1
-Menu("Kinematics","Free Fall",FB,"Parobolic",PB,"Return",R5)
-
-Lbl R5
-Goto P4
-
-Lbl FB
-ClrDraw
-TextColor(BLACK
-Text(0,0,"Notes for Free Fall")
-Text(15,0,"Y=Yo-0.5gt²    most often used as")
-Text(30,0,"0=intial height-0.5gt² calculates
-Text(45,0,"time it takes to get to ground
-Text(70,0,"V²=Vx²+Vy²     resulant velocity
-Text(85,0,"often paired with θ=tan(y/x)
-TextColor(RED)
-Text(115,0,"Remember: Vx doesn't effect time
-Text(130,0,"it takes to reach ground only effect
-Text(145,0,"the range which is X=Vxt, Vx constant
-Pause 
-Goto U1
-
-Lbl PB
-ClrDraw
-TextColor(BLACK
-Text(0,0,"Notes for Parobolic      [1]
-Text(15,0,"Y=Yo+Voyt+0.5gt²    when dropping from
-Text(30,0,"a intial height of Yo calculates time
-Text(45,0,"it takes to hit ground can derive Ymax
-Text(60,0,"by subsituting t=Voy/g into the equation
-Text(75,0,"(shown in next pg) Yo can be 0
-Text(90,0,"Vy=Voy-gt     no need to explain easy
-Text(105,0,"X=Vocos(θ)t maximum range Vx constant
-TextColor(RED)
-Text(135,0,"Remember: 30,45,60 degree shot same time
-Text(150,0,"at same speed, time it takes to land is
-Pause 
-ClrDraw
-TextColor(BLACK
-Text(0,0,"Notes for Parobolic      [2]
-TextColor(RED)
-Text(15,0,"t1=0.5,t2=√2/2,t3=√3/2 and 45°
-Text(30,0,"will go the furthest, 60 the shortest
-TextColor(BLACK
-Text(60,0,"Deriving Ymax:     Y=Yo+Voyt+0.5gt²
-Text(75,0,"t=Voy/g subsituting u can get
-Text(90,0,"Ymax=Yo+Voy(Voy/g)+0.5g(Voy/g)²
-Text(105,0,"simplify and get       Ymax=Voy²/2g
-Pause 
-ClrDraw
-Goto U1
-
-Lbl U2
-ClrHome
-Disp "Work In Progress"
-Pause 
-Goto P4
-
-Lbl U3
-ClrHome
-Disp "Work In Progress"
-Pause 
-Goto P4
-
-Lbl U4
-ClrHome
-Disp "Work In Progress"
-Pause 
-Goto P4
-
-Lbl U5
-ClrHome
-Disp "Work In Progress"
-Pause 
-Goto P4
-
-Lbl U6
-ClrHome
-Disp "Work In Progress"
-Pause 
-Goto P4
-
-Lbl U7
-ClrHome
-Disp "Work In Progress"
-Pause 
-Goto P4
-
-Lbl P5
-ClrDraw
-TextColor(BLACK
-Text(0,0,"Random Equations for Kinematics
-Text(15,0,"Displacement equation(x=vot+0.5at²)
-Text(30,0,"Velocity equation(v²=vo²+2ax)
-Text(45,0,"Displacement equation(x=(v+vo)/(2t))
-TextColor(BLUE
-Text(60,0,"Free fall velocity(v=vo+gt)
-Text(75,0,"Free fall displacement(y=vot+0.5gt²)
-Text(90,0,"Free fall time (t=√(2y/g))
-Text(105,0,"Free fall height (h=(vo²)/(2g))
-TextColor(RED
-Text(120,0,"Parabolic Range(x=voxt)
-Text(135,0,"Parabolic Vertical(y=voyt-0.5gt²)
-Text(150,0,"Parabolic Ymax(y=voy²/2g)
-Pause 
-Goto 1
-
-Lbl OO
-Menu("Maths","Simplify Radical",S1,"Factoring Polynomial",S2,"Distance Formula",S3,"Midpoint Formula",S4,"Return",R0)
+Lbl R4
+Goto M
 
 Lbl S1
 DelVar Y₁:DelVar Y₂:DelVar Y₃:DelVar Y₄:DelVar Y₅:DelVar Y₆:DelVar Y₇:DelVar Y₈:DelVar Y₉:DelVar Y₀
@@ -387,7 +233,7 @@ Pause
 ClrDraw
 AxesOn 
 ClrHome
-Goto OO
+Goto 2
 
 Lbl S2
 ClrDraw
@@ -651,7 +497,7 @@ Output(1,1,"
 ClrDraw
 AxesOn 
 ClrHome
-Goto OO
+Goto 2
 
 Lbl S3
 ClrHome
@@ -666,7 +512,7 @@ Disp "Distance:
 Output(7,11,√(X
 Pause 
 ClrHome
-Goto OO
+Goto 2
 
 Lbl S4
 ClrHome
@@ -683,4 +529,4 @@ Disp "The midpoint is:
 Disp "("+toString(F)+","+toString(H)+")"
 Pause 
 ClrHome
-Goto OO
+Goto 2
