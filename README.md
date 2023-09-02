@@ -3,7 +3,7 @@ calculator program for TI-84 Plus CE
 
 **Extra Info**
 
-u can score using the arrow keys or just press the numbers 1-9 to go to where u want, most of the units are under construction cause i haven't learned them, math section is basically code from the internet cz im too lazy to do it myself, u can find those programs in this [[link](https://www.ti84calcwiz.com/)](https://www.ti84calcwiz.com/) u can access the older versions of the program in the ALLINONE file (no idea why u would do that), if u do find anything wrong or dumb about the program just message me on teams or email me (email: jerryzhang976@gmail.com) Notes is still development in progress cz tooooo long.
+u can score using the arrow keys or just press the numbers 1-9 to go to where u want, most of the units are under construction cause i haven't learned them, math section is basically code from the internet cz im too lazy to do it myself, u can find those programs in this [(https://www.ti84calcwiz.com/)](https://www.ti84calcwiz.com/) u can access the older versions of the program in the ALLINONE file (no idea why u would do that), if u do find anything wrong or dumb about the program just message me on teams or email me (email: jerryzhang976@gmail.com) Notes is still development in progress cz tooooo long.
 
 
 
