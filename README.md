@@ -1,6 +1,12 @@
 # ALL IN ONE
 calculator program for TI-84 Plus CE
 
+**Usage**
+
+
+
+
+
 **Versions**
 
 v1.0
@@ -22,4 +28,5 @@ kinematics - random equations
 kinematics - notes
 versions page
 fixed some minor issues
+
 
