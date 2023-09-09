@@ -52,5 +52,7 @@ kinematics - notes\
 versions page\
 fixed some minor issues
 
-
+V1.2
+Added:\
+Dynamic kit
 
